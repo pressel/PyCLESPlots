@@ -3,6 +3,17 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+#PyCharm
+*.xml
+.idea/
+
+#Notebooks
+/Notebooks/.ipynb_checkpoints
+
+#Plots
+*.png
+*.pdf
+
 # C extensions
 *.so
 
