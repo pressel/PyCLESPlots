@@ -27,7 +27,7 @@ class StatsFile:
         ref = rt_grp['reference']
 
         t = ps['t'][:]
-        z = ref['zp_half'][:]
+        z = ref['z_half'][:]
 
         z_min_idx, z_max_idx = self.__get_z_idx(z, zmin, zmax)
         t_min_idx, t_max_idx = self.__get_t_idx(t, tmin, tmax)
@@ -90,7 +90,7 @@ class StatsFile:
 
 
         t = ps['t'][:]
-        z = ref['zp_half'][:]
+        z = ref['z_half'][:]
 
         z_min_idx, z_max_idx = self.__get_z_idx(z, zmin, zmax)
         t_min_idx, t_max_idx = self.__get_t_idx(t, tmin, tmax)
