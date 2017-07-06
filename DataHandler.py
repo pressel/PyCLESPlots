@@ -12,7 +12,6 @@ class StatsFile:
 
 
         if group =='timeseries':
-            print 'Here'
             return self.__data_ts(var_name, tmin, tmax)
         elif group == 'profiles':
             return self.__data_ps(var_name, tmin, tmax, zmin, zmax)
@@ -141,14 +140,6 @@ def main():
     StatsFile1 = StatsFile('/Users/presselk/Desktop/RicoData/SB/stats/Stats.Rico.nc')
     StatsFile2 = StatsFile('/Users/presselk/Desktop/RicoData/CoSal/stats/Stats.Rico.nc')
     StatsFile3 = StatsFile('/Users/presselk/Desktop/RicoData/Co70/stats/Stats.Rico.nc')
-
-
-
-
-    #print  StatsFile2.mean('lwp', 'timeseries', tmin=86400-1*3600, tmax=86400)
-
-
-
 
     d, t, z = StatsFile1.data('cloud_fraction', 'profiles')
 
